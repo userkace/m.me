@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="create m.me messenger links with custom messages.">
+    <meta name="keywords" content="messenger,facebook,custom,message,m.me,link">
+    <meta name="author" content="Kervin Padilla">
+    <meta name="revised" content="Kervin Padilla, 9/29/2023">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kace's m.me maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>kace's m.me maker</h1>
+    <form id="form">
+        <input type="text" placeholder="username" id="username" name="username" oninput="toggleButtonVisibility()"><br><br>
+        <textarea type="textarea" placeholder="message" id="message" name="message" oninput="toggleButtonVisibility()"></textarea><br><br>
+    </form>
+    <br>
+    <div id="linkWrapper">
+        <a id="link" href="">start typing!</a><br><br>
+        <a id="linkTxt" href=""></a>
+    </div>
+    <button id="copy" onclick="copyToClipboard()">copy</button>
+    <footer><a href="user.kace.dev" id="footer">userkace</a> &#169 2023</footer>
+    <script src="script.js"></script>
+</body>
+</html>
