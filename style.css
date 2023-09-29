@@ -53,6 +53,9 @@ input {
     border-color: grey;
     padding: 1em;
 }
+textarea{
+    min-height: 15em;
+}
 textarea:focus, 
 input:focus{
     border-color: var(--kace-orange);
