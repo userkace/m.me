@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>kace's m.me maker</h1>
-    <form id="form">
-        <input type="text" placeholder="username" value="" id="username" name="username" oninput="toggleButtonVisibility()"><br><br>
-        <textarea type="textarea" placeholder="message" value="" id="message" name="message" oninput="toggleButtonVisibility()"></textarea><br><br>
-    </form>
-    <br>
-    <div id="linkWrapper">
-        <a id="link" href="">start typing!</a><br><br>
-        <a id="linkTxt" href=""></a>
+    <div id="bodyWrapper">
+        <div id="formWrapper">
+            <h1 id="formTitle">kace's m.me maker</h1>
+            <form id="form">
+                <input type="text" placeholder="username" value="" id="username" name="username" oninput="toggleButtonVisibility()"><br><br>
+                <textarea type="textarea" placeholder="message" value="" id="message" name="message" oninput="toggleButtonVisibility()"></textarea><br><br>
+            </form>
+        </div>
+        <div id="linkWrapper">
+            <a id="link" href="">start typing!</a><br><br>
+            <a id="linkTxt" href=""></a>
+        </div>
+        <button id="copy" onclick="copyToClipboard()">copy</button>
     </div>
-    <button id="copy" onclick="copyToClipboard()">copy</button>
     <footer><a href="user.kace.dev" id="footer">userkace</a> &#169 2023</footer>
     <script src="script.js"></script>
 </body>

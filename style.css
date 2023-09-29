@@ -2,22 +2,46 @@
     --kace-orange: hsl(21, 98%, 67%);
 }
 * {
-    font-family: 'Courier New', Courier, monospace; 
+    font-family:'Courier New', Courier, monospace; 
     font-size: 12pt;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: #121212;
     user-select: none;
 }
+#bodyWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+#formWrapper{
+    background-color: #1e1e1f;
+    border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 0;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+#formTitle{
+    padding: 0;
+    padding-bottom: 1em;
+}
 h1{padding:1em;}
 #link,
 #linkTxt{
+    --text-decoration: none;
+    text-decoration: var(--text-decoration);
     padding: 1em;
 }
 form{
     padding: 0;
     margin: 0;
+    gap: 0;
 }
 textarea, 
 input {
@@ -27,7 +51,6 @@ input {
     color: #8d8d8d;
     border-radius: 10px;
     border-color: grey;
-    margin: 0em 1em;
     padding: 1em;
 }
 textarea:focus, 

@@ -37,15 +37,17 @@ function updateLink() {
     // Update the link on the webpage
     var link = document.getElementById("link");
     var linkTxt = document.getElementById("linkTxt");
-
-    const linkPointer = document.querySelector('#link');
-    linkPointer.style.setProperty('--text-decoration', 'none');
+    
     if ((username === "")||(text === "")){
+        link.style.setProperty('--text-decoration', 'none');
+        linkTxt.style.setProperty('--text-decoration', 'none');
         link.href = "";
         link.innerText = "start typing!";
         linkTxt.href = "";
         linkTxt.innerText = "";
     } else {
+        link.style.setProperty('--text-decoration', 'underline');
+        linkTxt.style.setProperty('--text-decoration', 'underline');
         link.href = url;
         link.innerText = url;
         linkTxt.href = urlTxt;
