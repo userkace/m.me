@@ -31,7 +31,22 @@ body{
     padding: 0;
     padding-bottom: 1em;
 }
-h1{padding:1em;}
+h1{
+    position: relative;
+    margin-bottom: 1em;
+    padding:1em;
+    
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background:  #fd955b; /*var(--text-gradient-yellow)*/
+    border-radius: 3px;
+}
 #link,
 #linkTxt{
     --text-decoration: none;
