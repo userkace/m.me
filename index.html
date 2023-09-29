@@ -8,13 +8,24 @@
     <meta name="revised" content="Kervin Padilla, 9/29/2023">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kace's m.me maker</title>
+    <title>m.me maker</title>
+    <link rel="icon" type="image/x-icon" href="/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="bodyWrapper">
         <div id="formWrapper">
-            <h1 id="formTitle">kace's m.me maker</h1>
+            <nav class="navbar">
+                <ul class="navbar-list"></ul>
+                  <li class="navbar-item">
+                    <a href="https://user.kace.dev"><img src="logo.ico"></a>
+                  </li>
+                </ul>
+              </nav>
+            <h1 id="formTitle">m.me maker</h1>
             <form id="form">
                 <input type="text" placeholder="username" value="" id="username" name="username" oninput="toggleButtonVisibility()"><br><br>
                 <textarea type="textarea" placeholder="message" value="" id="message" name="message" oninput="toggleButtonVisibility()"></textarea><br><br>
@@ -26,7 +37,7 @@
         </div>
         <button id="copy" onclick="copyToClipboard()">copy</button>
     </div>
-    <footer><a href="user.kace.dev" id="footer">userkace</a> &#169 2023</footer>
+    <footer><a href="https://user.kace.dev" id="footer">userkace</a> &#169 2023</footer>
     <script src="script.js"></script>
 </body>
 </html>

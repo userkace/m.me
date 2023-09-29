@@ -2,7 +2,6 @@
     --kace-orange: hsl(21, 98%, 67%);
 }
 * {
-    font-family:'Courier New', Courier, monospace; 
     font-size: 12pt;
     color: #fff;
     margin: 0;
@@ -21,17 +20,55 @@ body{
 }
 #formWrapper{
     background-color: #1e1e1f;
+    border: #383838 1px solid;
     border-radius: 10px;
     padding: 1em;
     padding-bottom: 0;
     margin-top: 4em;
     margin-bottom: 1em;
 }
+li { list-style: none; }
+img{
+    height: 30px;
+}
+.navbar {
+    position: absolute;
+    bottom: auto;
+    top: 4em;
+    left: auto;
+    right: auto;
+    width: max-content;
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 0 10px;
+    border: #383838 1px solid;
+    padding: 10px 20px;
+    margin-left: 13.7em;
+    box-shadow: none;
+    z-index: 5;
+  }
+  .navbar-list { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px; 
+}
+
+  .navbar-link {
+    font-weight: var(--fw-500);
+    padding: 20px 7px;
+  }
+
+
+
 #formTitle{
     padding: 0;
     padding-bottom: 1em;
 }
 h1{
+    font-family: 'Poppins', sans-serif;
     position: relative;
     margin-bottom: 1em;
     padding:1em;
@@ -49,6 +86,7 @@ h1::after{
 }
 #link,
 #linkTxt{
+    font-family: 'Roboto Mono', monospace;
     --text-decoration: none;
     text-decoration: var(--text-decoration);
     padding: 1em;
@@ -60,12 +98,13 @@ form{
 }
 textarea, 
 input {
+    font-family: 'Roboto Mono', monospace;
     min-width: 15em; 
     max-width: 15em;
     background-color: #1e1e1f;
     color: #8d8d8d;
     border-radius: 10px;
-    border-color: grey;
+    border: #383838 1px solid;
     padding: 1em;
 }
 textarea{
@@ -90,6 +129,7 @@ input:focus{
     border-color: var(--kace-orange);
 }
 footer{
+    font-family: 'Roboto Mono', monospace;
     position: fixed;
     padding: 0.5em;
     left: 0;
