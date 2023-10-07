@@ -43,7 +43,7 @@ function copyToClipboard() {
     var url = domain + username;
     var urlTxt = url + param + message;
     navigator.clipboard.writeText(urlTxt);
-    alert("Copied > " + urlTxt);
+    //alert("Copied > " + urlTxt);
 }
 
 function toggleButtonVisibility() {
@@ -56,4 +56,3 @@ function toggleButtonVisibility() {
         copy.style.display = "none";
     }
 }
-// Update the printed link as you type
