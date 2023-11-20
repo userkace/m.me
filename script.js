@@ -6,7 +6,8 @@ document.getElementById("message").addEventListener("input", updateLink);
 function updateLink() {
     var username = document.getElementById("username").value.trim();
     var message = document.getElementById("message").value.trim();
-    var firstWord = message.replace(/ .*/,'');
+    var firstWord = message.substring(0,5);
+    var firstWord = firstWord.replace(/ .*/,'');
     message = message.replace(/ /g, "%20");
     var domain = "https://m.me/";
     var param = "?text=";
