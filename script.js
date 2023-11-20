@@ -11,13 +11,10 @@ function updateLink() {
     message = message.replace(/ /g, "%20");
     var domain = "https://m.me/";
     var param = "?text=";
-    var url = domain + username;
-    var urlTxt = url + param + message;
-    var urlAlt = url + param + firstWord + "...";
+    var ell = "...";
     // Update the link on the webpage
     var link = document.getElementById("link");
     var linkTxt = document.getElementById("linkTxt");
-    
     if ((username === "")||(message === "")){
         link.style.setProperty('--text-decoration', 'none');
         linkTxt.style.setProperty('--text-decoration', 'none');
@@ -28,10 +25,10 @@ function updateLink() {
     } else {
         link.style.setProperty('--text-decoration', 'underline');
         linkTxt.style.setProperty('--text-decoration', 'underline');
-        link.href = url;
-        link.innerText = url;
-        linkTxt.href = urlTxt;
-        linkTxt.innerText = urlAlt;
+        link.href = domain + username;
+        link.innerText = domain + username.substring(0,5) + ell;
+        linkTxt.href = domain + username + param + message;
+        linkTxt.innerText = domain + username.substring(0,3) + ell + param + firstWord.substring(0,3) + ell;
     }
 } 
 
