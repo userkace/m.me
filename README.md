@@ -6,13 +6,13 @@ This project is a web application that enables users to create and share m.me me
 ```html
   https://userkace.github.io/m.me
 ```
-## Demo
+## demo
 
 ![](https://raw.githubusercontent.com/userkace/m.me/main/doc/demo.gif)
 
 
 
-## Features
+## features
 
 - Easily convert your messages to links.
 - View your links generated in real-time.
@@ -20,18 +20,18 @@ This project is a web application that enables users to create and share m.me me
 - Works on mobile!
 
 
-## 🔗 Links
+## links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://user.kace.dev/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kcspadilla/)
 [![twitter](https://img.shields.io/badge/github-1e1e1e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/userkace)
 
 
-## Authors
+## authors
 
 - [@userkace](https://www.github.com/userkace)
 
 
-## Acknowledgements
+## acknowledgements
 
  - [Awesome copy button!](https://uiverse.io/Galahhad/kind-cheetah-52)
 
